@@ -1,0 +1,87 @@
+header{
+    
+text-align: center;
+   font-family: 'Manrope', sans-serif;
+   padding-bottom: 60px;
+   background-color: pink;
+   width: 100%;
+  
+  }
+
+#titles{
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+header h2, header h3{
+    font-weight: 200;
+    line-height: 60px;
+    color:#49494d
+}
+header h1{
+    font-weight: 500;
+    color: #000;
+}
+
+h2, h3{
+    color: #49494d
+}
+
+button{
+    background-color: plum;
+    border: 2px solid none;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.featured-project{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.weather-project{
+    padding-top: 10px;
+    margin-left: -60px;
+}
+.weather-app-title{
+    margin-left: 60px;
+}
+.weather-image {
+    height: 50px;
+
+}
+.lacrosse-fanatic{
+     margin-left: -40px;
+     text-align: center;
+     margin: 0 auto;
+ }
+.weather-app-blurb{
+    padding:20px
+}
+.portfolio-website{
+    margin-left: 120px;
+
+}
+.p-app-title{
+    text-align: center;
+    margin-right: 40px;
+}
+.portfolio-website p{
+    padding: 20px;
+}
+.portfolio-image{
+    width:400px
+}
+
+
+@media(max-width:900px){
+    div{
+        text-align: center;
+    }
+}
