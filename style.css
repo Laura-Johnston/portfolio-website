@@ -168,10 +168,14 @@ padding-bottom: -20px;
     margin-left: 120px;
     margin-right: -100px;
 }
-.contact-links{
+ .index-contact{
+text-align: center;
+ }
+
+.contact-links-index{
     transition: all 100ms ease-in-out;
 }
-#contact-icons a:hover{
+#contact-icons-index a:hover{
     color: (--main);
 
 }
@@ -237,7 +241,7 @@ ul h2{
 .contact-links{
    font-size: 40px;
     padding: 15px;
-    border-radius: 50%;
+
   transition: all 100ms ease-in-out;
    
    
@@ -261,18 +265,27 @@ i{
         margin: 0 auto;
 
     }
+    .portfolio-website h3{
+        margin-left: 10%;
+    }
     .proficient-logos{
         margin: 0 auto;
         margin-top: 2%;
     }
-    #contact-icons{
+    
+   /* #contact-icons-index{
+        display: flex;
+        flex-direction: row;
+        font-size: 35px;
+        text-align: center;
         margin-left: 25%
-    }
+        
+    }*/
     .weather-project{
         margin: 0%;
         text-align: center;
     }
-    .weather-project h3{
+    .weather-project h3,{
         margin-right: 15%;
     }
     .weather-app-blurb{
@@ -283,6 +296,7 @@ i{
     text-align: left;
     margin-top: -20px;
     margin-bottom: -20px;
+    margin-left: -20px;
     opacity: .6
     ;
     }
@@ -292,9 +306,23 @@ i{
     .contact-bar{
         margin-top:-5px;
         margin-bottom: -20px;
+
+    }
+    .contact-bar h3{
+        font-size: 18px;
     }
     #contact-icons{
-        margin: 0;
+        margin:  0 auto;
     }
+     .index-contacts i{
+    margin-left: 40%;
+     }
+    .about-me-li ul{
+        margin-right: 10%;
+    }
+    
 }
-@media(max-width:)
+@media(min-width:430px){
+
+
+}
