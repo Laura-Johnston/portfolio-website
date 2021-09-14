@@ -11,42 +11,44 @@
     <link rel="stylesheet" href="style.css" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9c7651799.js" crossorigin="anonymous"></script>
     
     
 </head>
 
 <body>
-    <header>
+    <header id="header-index">
+     <div id="header-bg">
         <div id="titles">
         <h2>Hi,</h2>
         <h1>I'm Laura Johnston</h1>
-        <h3>A Front-end Developer </br>based in South London </h3>
+     <h3>A Front-end Developer </br>based in South London </h3>
+     </div>
     </div>
-    <div>
-    <a href="#" class="primary-link rounded shadow mt-5">My Projects</a>
-    </div>
+    <div class="buttons">
+        <button type="button" class="btn btn-secondary shadow">
+    <a href="#featured-project" class="primary-link rounded shadow mt-5 buttons">My Projects</a></button>
+    <button type='button' class="btn btn-secondary shadow">
+    <a href="about.html" class="primary-link rounded shadow mt-5 buttons">Hire Me </a></button>
+</div>
 </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Laura Johnston</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid navDiv">
+            <a class="navbar-brand" href="#titles">Laura Johnston</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="navbar-collapse collapse navbar-nav " id="navbarNav nav-one">
+                <ul class="navbar-nav navAside">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Projects</a>
+                        <a class="nav-link" href="index.html#featured-project">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html#contact">Contact me</a>
@@ -54,19 +56,59 @@
                 </ul>
             </div>
         </div>
-    </nav><button>
-        <a href="/about.html">About Me</a>
-    </button>
+    </nav>
 
-<main>
-    
 
-    <h2 class="featured-project">Featured Projects</h2>
-
+<div id="about-me">
     <div class="container">
-        <div class="row mt-5">
-        <div class="col-lg-4 col-md-6">
-            <div class="weather-project card card-project border-0">
+        <div class='row'>
+            <div class='col-md-6'>
+  <img src="img/new-coder.jpg" alt="picture-of-laura-johnston" class="shadow" height="250" width="250"/>
+</div>
+<div class="col-md-6">
+    <section id="about-me-html">
+    <h3>Hey I'm Laura,</h3>
+    <br> 
+    <h4>I love to cook and try out all kinds of new recipes.
+          I adore travelling too, visiting and exploring new towns and cities.
+          You can often find me chilling out near the beach.</h4>
+<br>
+    <h5>Feel free to email me if you would like to collaborate</h4>
+    </section>
+ </div>
+</div>
+<div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <button type="button" class="btn btn-secondary mail-to mt-3
+        ">
+            <a href="mailto:laurakjgb@gmail.com">
+                <h5>Lets Talk!</h5>
+            </a>
+        </button>
+    </div>
+</div>
+ <div class="row">
+     <div class="col-md-5"></div>
+     <div class="col-md-10 col-sm-12">
+<div class="proficient-logos">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-js-square"></i>
+    <i class="fab fa-react"></i>
+</div></div>
+ </div>
+
+</div>
+</div>
+<section class="featured-project-section">
+    <h2 id="featured-project">Featured Projects</h2>
+
+    <div class="container fp">
+        <div class="row mt-3">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="weather-project">
     <h3 class="mb-3 mt-3 weather-app-title">Weather app</h3>
         <p class="weather-app-blurb">
             A project built using HTML, CSS and JavaScript.
@@ -76,7 +118,7 @@
             city in
             the world.
         </p>
-        <img src="img/weather-screenshot.png" class="img-fluid rounded shadow weather-app-screenshot pr-2" height=100 width=300>
+        <img src="img/weather-screenshot.png" class="img-fluid rounded shadow weather-image ">
         <a href="https://affectionate-swirles-e17ebf.netlify.app/"></a></img>
         </div>
     </div>
@@ -92,26 +134,44 @@
                     </div>
                     </div>
  
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-12 col-sm-12">
         <div class="portfolio-website">
             <h3 class="mb-3 mt-3 p-app-title">Portfolio-website</h3>
             <p class="portfolio-website-blurb">
             Portfolio-website built using HTML and CSS, fully responsive.
             </p>
-            <img src="img/portfolio-screenshot.JPG" alt="portfolio-screenshot" height=200 width=300 class="img-fluid rounded shadow portfolio-image"/>
+            <img src="img/portfolio-screenshot.JPG" alt="portfolio-screenshot"class="img-fluid rounded shadow portfolio-image"/>
 </div>
     </div>
         </div>
     </div>
     </div>
     </div>
+</section>
+        <div id="contact-icons">
+            <div class="contact-links m-3">
+                <a href="https://github.com/Laura-Johnston" target="_blank" title="github-contact">
+                    <i class=" fa fab fa-github">
+                    </i>
+                </a>
+            </div>
+            <div class="contact-links m-3">
+                <a href="https://www.linkedin.com/in/laura-johnston-2b9117205/" target="_blank" title="linkedin-contact">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                </a>
+            </div>
+            <div class="contact-links m-3">
+                <a href="mailto:laurakjgb@gmail.com">
+                    <i class="fa fas fa-envelope">
+                    </i>
+</div>
 
         
             
                 
       
-</main>
-
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>

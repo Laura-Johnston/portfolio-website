@@ -1,73 +1,157 @@
-header{
-    
-text-align: center;
+:root{
+    --background: rgba(196, 169, 193, .6);
+    --main: #c67ace;
+    --divBackgrounds: rgba(196, 169, 193, .6);
+    --heading:#49494d;
+    --fontmajor: 'Righteous', cursive;
+    --fontminor: 'Manrope', sans-serif;
+}
+
+#header-index{
+    text-align: center;
    font-family: 'Manrope', sans-serif;
    padding-bottom: 60px;
-   background-color: pink;
-   width: 100%;
-  
+  padding-top: 60px;
+   z-index: 6;
+   background-image: url("img/c-p-background.jpg");
+      opacity: .8;
+      background-size: cover;
+    background-position: right;
+
   }
 
+nav{
+    background-color: rgba(196, 169, 193, .6);
+}
+
+   
+
 #titles{
+    color: #fff;
     margin-top: 50px;
     padding-top: 100px;
     margin-bottom: 40px;
 }
-header h2, header h3{
+header h1, header h2, header h3{
+    color: #fff;
     font-weight: 200;
     line-height: 60px;
-    color:#49494d
+    
 }
 header h1{
+    font-family: var(--fontmajor);
     font-weight: 500;
-    color: #000;
+    color: var(--main);
+    
 }
 
 h2, h3{
-    color: #49494d
+    color: #49494d;
 }
 
-button{
-    background-color: plum;
-    border: 2px solid none;
-    padding: 20px;
-    border-radius: 7px;
-    margin-top: 30px;
+p
+{font-family: 'Manrope', sans-serif;
 
 }
 
 a{
     text-decoration: none;
     color: white;
+   
+}
+.buttons a :hover{
+    color: (--main);
+}
+#about-me{
+    border-top:var(--main);
+    padding-bottom: 100px;
+    background-color: var(--divBackgrounds);
+    padding-top: 100px;
+}
+#about-me h3{
+    font-family: 'Mitr', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+#about-me img{
+    margin-left: 30%;
+    border-radius: 50%;
+}
+
+}
+#about-me-html{
+padding-left: 10px;
+padding-bottom: -20px;
+}
+
+#about-me-html h5{
+    font-family: var(--fontminor);
+    color: var(--heading);
+}
+
+.mail-to{
+    margin-left: 10px;
+    color: var(--heading);
+    padding: 10px;
+}
+
+.mail-to a:hover{
+    color: var(--main);
+}
+.proficient-logos{
+    margin-left: 13.5%;
+    margin-top: 2%;
+    margin-bottom: -20px;
+   
+}
+.proficient-logos i{
+    color: #49494d;
+    font-size: 50px;
+    padding:1.5rem;
+}
+.featured-project-section{
+    padding-bottom: 60px;
+    background-color: rgba(246, 244, 247, 1) ;
+}
+.navDiv{
+    padding-left: 20px;
     
 }
-.featured-project{
+.contact-div{
+    background-color: rgba(196, 169, 193, .6);
+    padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+#featured-project{
     text-align: center;
-    padding-bottom: 50px;
+    font-family:  'Mitr', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    color: #000;
 }
 .weather-project{
     padding-top: 10px;
-    margin-left: -60px;
+    margin-left: -40px;
+    flex-wrap: nowrap;
 }
 .weather-app-title{
     margin-left: 60px;
 }
 .weather-image {
-    height: 50px;
+    height: 250px;
+    width: fit-content;
 
 }
 .lacrosse-fanatic{
-     margin-left: -40px;
+     margin-left: -80px;
      text-align: center;
      margin: 0 auto;
  }
 .weather-app-blurb{
     padding:20px
 }
-.portfolio-website{
-    margin-left: 120px;
 
-}
 .p-app-title{
     text-align: center;
     margin-right: 40px;
@@ -76,12 +160,141 @@ a{
     padding: 20px;
 }
 .portfolio-image{
-    width:400px
+    height: 250px;
+    width: fit-content;
+    padding-top: 20px;
+}
+.portfolio-website{
+    margin-left: 120px;
+    margin-right: -100px;
+}
+.contact-links{
+    transition: all 100ms ease-in-out;
+}
+#contact-icons a:hover{
+    color: (--main);
+
+}
+/*about.html css*/
+
+#header-about{
+    background-color: var(--background);
+    padding-bottom:20px;
+    padding-top: 100px;
+
 }
 
+#header h5{
+    font-family: var(--fontminor);
+    color: var(--heading);
+}
 
+#header-about h1{
+    font-family: var(--fontminor);
+    margin-left: 80px;
+    padding-bottom:20px;
+    color:#5f2166;
+}
+#header-about h2{
+    font-weight: 400;
+}
+#header-about{
+    font-size: 1.1em;
+    
+}
+.container li{
+    list-style-type: none;
+}
+ul h2{
+    color: rgb(255,182,193,) ;
+}
+.coder{
+    border-radius: 50%;
+    margin-top: -40px;
+    
+}
+.col-lg-4 {
+    padding-bottom: 60px;
+}
+.contact-bar{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contact-bar h3{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: -20px;
+    font-size: 22px;
+   
+    
+}
+#contact-icons{
+    display: flex;
+    justify-content: center;
+     color: rgb(255,182,193, 1);
+    
+}
+.contact-links{
+   font-size: 40px;
+    padding: 15px;
+    border-radius: 50%;
+  transition: all 100ms ease-in-out;
+   
+   
+}
+
+i{
+    color: rgb(108, 117, 125, .6);
+}
+
+/*media queries - small screens*/
 @media(max-width:900px){
-    div{
+    *
+    {margin: 0 auto;
         text-align: center;
     }
+    #about-me img{
+        margin-left: 0%;
+        margin-bottom: 15%;   
+    }
+    .portfolio-website{
+        margin: 0 auto;
+
+    }
+    .proficient-logos{
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    #contact-icons{
+        margin-left: 25%
+    }
+    .weather-project{
+        margin: 0%;
+        text-align: center;
+    }
+    .weather-project h3{
+        margin-right: 15%;
+    }
+    .weather-app-blurb{
+        padding:0%;
+    }
+
+    #header-about h1{
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    opacity: .6
+    ;
+    }
+    .coder{
+        margin-top: 5%;
+    }
+    .contact-bar{
+        margin-top:-5px;
+        margin-bottom: -20px;
+    }
+    #contact-icons{
+        margin: 0;
+    }
 }
+@media(max-width:)
