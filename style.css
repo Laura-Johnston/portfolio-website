@@ -265,7 +265,8 @@ i{
 }
 .please-contact{
     color: #fff;
-    opacity: .6;
+    opacity: .8;
+    margin-left: 15px ;
 }
 
 /*media queries - small screens*/
