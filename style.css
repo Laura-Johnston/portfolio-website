@@ -265,9 +265,12 @@ i{
 }
 .please-contact{
     color: #fff;
-    opacity: .8;
-    margin-left: 20% ;
-    margin-top: 10%;
+    opacity: 1;
+    margin-left: 3.5% ;
+    margin-top:4%;
+    font: var(--fontminor);
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /*media queries - small screens*/
