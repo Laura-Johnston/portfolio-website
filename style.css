@@ -263,6 +263,10 @@ ul h2{
 i{
     color: rgb(108, 117, 125, .6);
 }
+.please-contact{
+    color: #fff;
+    opacity: .6;
+}
 
 /*media queries - small screens*/
 @media(max-width:900px){
