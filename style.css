@@ -56,13 +56,18 @@ header h1{
     
 }
 
-h2, h3{
+h2, h3, footer a{
     color: #49494d;
 }
 
-p
-{font-family: 'Manrope', sans-serif;
+p, footer{
+    font-family: 'Manrope', sans-serif;
 
+}
+.open-sourced{
+    text-align: left;
+    margin-top: 2%;
+    padding: 10px;
 }
 
 a{
@@ -70,7 +75,7 @@ a{
     color: white;
    
 }
-.buttons a :hover{
+a :hover{
     color: (--main);
 }
 #about-me{
@@ -169,6 +174,7 @@ padding-bottom: -20px;
     margin-right: 40px;
 }
 .portfolio-website p{
+    text-align: center;
     padding: 20px;
 }
 .portfolio-image{
@@ -177,7 +183,7 @@ padding-bottom: -20px;
     padding-top: 20px;
 }
 .portfolio-website{
-    margin-left: 120px;
+    margin-left: 80px;
     margin-right: -100px;
 }
  .index-contact{
@@ -333,8 +339,8 @@ i{
         font-size: 18px;
     }
     #contact-icons{
-        margin:  0 auto;
-        margin-left: 30px
+        margin-right: 10%;
+       
     }
      .index-contacts i{
     margin-left: 40%;
@@ -344,9 +350,32 @@ i{
     }
     
 }
-@media(min-width:430px) and (max-width:1024px){
+
+/*medium screens*/
+@media(min-width:430px) and (max-width:1280px){
 #contact-icons{
     width:  25%;
+}
+.p-app-title{
+margin-right: 15%;
+
+}
+.portfolio-website-blurb{
+margin-right:10%;
+text-align: left;
+}
+
+.portfolio-image{
+    margin-right: 10%;
+}
+.index-contacts{
+    margin-left: 10%;
+}
+.index-contacts i{
+    text-align: center;
+    margin:0 auto;
+    padding: 20%;
+
 }
 
 }
