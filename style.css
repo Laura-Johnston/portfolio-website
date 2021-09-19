@@ -213,7 +213,7 @@ text-align: center;
 
 #header-about h1{
     font-family: var(--fontminor);
-    margin-left: 80px;
+    margin-left: 10%;
     padding-bottom:20px;
     color:#5f2166;
      opacity: .6
@@ -321,11 +321,7 @@ i{
     }
 
     #header-about h1{
-    text-align: left;
-    margin-top: -20px;
-    margin-bottom: -20px;
-    margin-left: -20px;
-   
+    margin:-30px 25% -20px -15px;
     }
     .coder{
         margin-top: 5%;
